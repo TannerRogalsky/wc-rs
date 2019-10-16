@@ -1,0 +1,13 @@
+[package]
+name = "wc-rs"
+version = "0.1.0"
+authors = ["Tanner Rogalsky <tanner@tannerrogalsky.com>"]
+edition = "2018"
+
+[features]
+parallel = ["rayon", "num_cpus"]
+
+[dependencies]
+structopt = "0.3"
+rayon = { version = "1.2", optional = true }
+num_cpus = { version = "1.10", optional = true }
